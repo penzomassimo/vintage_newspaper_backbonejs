@@ -1,0 +1,19 @@
+{
+  "name": "vintage_newspaper",
+  "version": "0.0.0",
+  "authors": [
+    "Massimo Penzo <penzo.massimo@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.3"
+  }
+}

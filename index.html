@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC);
+        @import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic);
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            outline: 0; /*removes the dotted box around the links*/
+            cursor: pointer;
+        }
+
+        /* unvisited link */
+        a:link {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #000000;
+            text-decoration: dashed;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #000000;
+            text-decoration: red underline;
+        }
+
+        /* selected link */
+        a:active {
+            color: #000000;
+        }
+
+        body {
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+
+            /*size*/
+            height: auto;
+            width: 100%;
+
+            /*box model*/
+            margin: 0px 0px 0px 0px;
+            /*border: 1px solid #000000;*/
+            padding: 0px 0px 0px 0px;
+            /*box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 1.0);*/
+
+
+            background-color: #262626;
+            font-family: 'IM Fell DW Pica', serif;
+            color: #453826;
+
+        }
+
+        #wrapper {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            overflow: hidden; /*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: auto;
+            width: 80%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-left: 1px dotted #453826;
+            border-right: 1px dotted #453826;
+            border-top: 1px dotted #453826;*/
+            margin: 10px auto 0px auto;
+            -moz-box-shadow:    inset 0 0 700px #F0D4A2;
+            -webkit-box-shadow: inset 0 0 700px #F0D4A2;
+            box-shadow: inset 0 0 700px #F0D4A2;
+            border-radius: 5px;
+
+            /*decorations*/
+            background-color: #F5F2D5;
+            /*background:
+            linear-gradient(to top, #F0D4A2, #F5F2D5),
+            linear-gradient(to right, #F0D4A2, #F5F2D5),
+            linear-gradient(to bottom, #F0D4A2, #F5F2D5 50%),
+            linear-gradient(to left, #F0D4A2, #F5F2D5 50%);*/
+
+        }
+
+        #header {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            overflow: hidden; /*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 150px;
+            width: 95%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            margin: 15px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            text-align: center;
+
+        }
+
+        #content {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            overflow: hidden; /*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: auto;
+            width: 95%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            text-align: center;
+        }
+
+        #sub_header_1 {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 80%;
+            width: 100%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            /*background-color: antiquewhite;*/
+
+            text-align: center;
+        }
+
+        #sub_header_2 {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 20%;
+            width: 100%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            border-top: 4px double #453823;
+            border-bottom: 4px double #453823;
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            /*background-color: antiquewhite;*/
+
+            text-align: center;
+        }
+
+        #column_1 {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-right: 1px solid #453823;*/
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+
+            text-align: center;
+        }
+
+        #column_2 {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-right: 1px solid #453823;*/
+            /*border-left: 1px solid #453823;*/
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+
+            text-align: center;
+        }
+
+        #column_3 {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+
+            text-align: center;
+        }
+
+        #column_4 {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 40%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+
+            text-align: center;
+        }
+
+        #column_5 {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+
+            text-align: center;
+        }
+
+        .article {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: auto;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            margin: 10px 0 0px 0;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+
+            text-align: justify;
+        }
+
+        .title {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: auto;
+            width: 95%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            margin: 0px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            font-size: 23px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .title_separator {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 1px;
+            width: 30%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            border-top: 1px solid #453823;
+            margin: 5px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+
+            text-align: center;
+        }
+
+        .summary {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: auto;
+            width: 95%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 5px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .copy {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: auto;
+            width: 95%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 10px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            text-indent: 25px;
+
+            text-align: justify;
+        }
+
+        .author {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: auto;
+            width: 95%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 10px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            font-style: italic;
+            text-align: right;
+        }
+
+        .separation_bar {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 5px;
+            width: 95%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            border-top: 3px solid #453823;
+            border-bottom: 1px solid #453823;
+            margin: 5px auto 0px auto;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+
+            text-align: justify;
+        }
+
+        #left_box {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 0px 0px 0px 0px;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            /*text-align: right;*/
+        }
+
+        #logo {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 60%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 0px 0px 0px 0px;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            font-size: 90px;
+            text-align: center;
+        }
+
+        #right_box {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 0px 0px 0px 0px;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            /*text-align: right;*/
+        }
+
+        #weather {
+            /*positioning*/
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            transform: translateY(-50%);
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 95%;
+            width: 70%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            border: 5px double #453826;
+            margin: 0px auto 0px auto;
+
+            /*decorations*/
+            background: repeating-linear-gradient(
+                    45deg,
+                    #453826,
+                    #453826 5px,
+                    transparent 5px,
+                    transparent 10px
+            );
+            /*text-align: right;*/
+        }
+
+        #advertisement {
+            /*positioning*/
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            /*float: left;*/
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            transform: translateY(-50%);
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 95%;
+            width: 70%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            border: 5px double #453826;
+            margin: 0px auto 0px auto;
+
+            /*decorations*/
+            background: repeating-linear-gradient(
+                    45deg,
+                    #453826,
+                    #453826 5px,
+                    transparent 5px,
+                    transparent 10px
+            );
+            /*text-align: right;*/
+        }
+
+        #volume {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 0px 0px 0px 0px;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            /*text-align: right;*/
+        }
+
+        #date {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 60%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 0px 0px 0px 0px;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            /*text-align: right;*/
+        }
+
+        #price {
+            /*positioning*/
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            float: left;
+            /*overflow: hidden; *//*used to avoid the disapperance of the container*/
+
+            /*display*/
+            display: block; /*default display for div tags*/
+
+            /*size*/
+            height: 100%;
+            width: 20%;
+
+            /*box model*/
+            padding: 0px 0px 0px 0px;
+            /*border: 1px dotted #000000;*/
+            /*border-top: 1px solid #000000;*/
+            margin: 0px 0px 0px 0px;
+            /*border: 1px dashed #000000;*/
+
+            /*decorations*/
+            vertical-align: middle;
+            /*text-align: right;*/
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Click on each article to mark it as read !</h1>
+<div id="wrapper">
+    <div id="header">
+        <div id="sub_header_1">
+            <div id="left_box">
+                <div id="weather"></div>
+            </div>
+            <div id="logo">PAMPHLET</div>
+            <div id="right_box">
+                <div id="advertisement"></div>
+            </div>
+        </div>
+        <div id="sub_header_2">
+            <div id="volume">Number 1,523</div>
+            <div id="date">Washington DC, Thursday, March 4, 2015</div>
+            <div id="price">Price $ 0.99</div>
+        </div>
+    </div>
+    <div id="content">
+        <!--
+                <div id="column_1"></div>
+                <div id="column_2"></div>
+                <div id="column_3"></div>
+                <div id="column_4"></div>
+        -->
+    </div>
+</div>
+
+<!--templates-->
+
+<script type="text/template" id="article_template">
+    <div class="article">
+        <div class="title"><%= title %></div>
+        <div class="title_separator"></div>
+        <div class="summary"><%= summary %></div>
+        <div class="copy"><%= copy %></div>
+        <div class="author">written by <%= author %></div>
+        <div class="separation_bar"></div>
+    </div>
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+<script>
+    console.log('massimo');
+
+    /*models*/
+
+    var ArticleModel = Backbone.Model.extend({
+        initialize: function(){
+            console.log('An article model has been initialized');
+        },
+        defaults: {
+            title: 'title-is-missing',
+            summary: 'summary-is-missing',
+            copy: 'copy-is-missing',
+            author: 'author-is-missing'
+        }
+    });
+
+    /*views*/
+    var WeatherView = Backbone.View.extend({
+        initialize: function(){
+            console.log('A weather view has been initialized');
+        },
+        render: function(){
+
+        }
+    });
+
+    var AdView = Backbone.View.extend({
+        initialize: function(){
+            console.log('An ad view has been initialized');
+        },
+        render: function(){
+
+        }
+    });
+
+    var ArticleView = Backbone.View.extend({
+        initialize: function(){
+            this.render();
+        },
+        template: _.template($("#article_template").html()),
+        render: function(){
+            this.$el.html(this.template(this.model.toJSON()));
+            return this;
+        },
+        events: {
+            'click .article': 'crossArticleOut'
+        },
+        crossArticleOut: function(){
+            $('.article', this.el).css({
+                'opacity':'0.3'
+            });
+        }
+    });
+
+    var ArticleContainerView = Backbone.View.extend({
+        initialize: function(){
+            console.log('the articles container area has been initialized');
+            this.render();
+        },
+        render: function(){
+            _.each(this.collection.models, function(item){
+                console.log(item.toJSON());
+                var itemView = new ArticleView({model: item});
+                this.$el.append(itemView.render().el);
+            }, this);
+        }
+    });
+
+
+
+    /*collections*/
+    var ArticlesCollection = Backbone.Collection.extend({
+        model: ArticleModel,
+        initialize: function(){
+            console.log('An articles collection has been initialized');
+        }
+    });
+
+    var AdsCollection = Backbone.Collection.extend({
+
+    });
+
+    /*router*/
+    var NewspaperRouter = Backbone.Router.extend({
+        routes: {
+            "": "initialHandler"
+        },
+        initialHandler: function(){
+            console.log('initialHandler is working');
+            var articles = new ArticlesCollection();
+            articles.add(
+                    [
+                        new ArticleModel({
+                            title: '1 NEW JERSEY SEEKS TO END DRY LAW TOMORROW',
+                            summary: 'Should the Prohibition Amendment Be Declared Unconstitutional?',
+                            copy: 'Lorem ipsum dolor sit amet, ne nam admodum apeirian, cu clita torquatos mel,' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.'  +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ',
+                            author: 'Massimo Penzo'
+                        }),
+                        new ArticleModel({
+                            title: '2 NEW JERSEY SEEKS TO END DRY LAW TOMORROW',
+                            summary: 'Should the Prohibition Amendment Be Declared Unconstitutional?',
+                            copy: 'Lorem ipsum dolor sit amet, ne nam admodum apeirian, cu clita torquatos mel,' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.'  +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ',
+                            author: 'Massimo Penzo'
+                        }),
+                        new ArticleModel({
+                            title: '3 NEW JERSEY SEEKS TO END DRY LAW TOMORROW',
+                            summary: 'Should the Prohibition Amendment Be Declared Unconstitutional?',
+                            copy: 'Lorem ipsum dolor sit amet, ne nam admodum apeirian, cu clita torquatos mel,' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.'  +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ',
+                            author: 'Massimo Penzo'
+                        }),
+                        new ArticleModel({
+                            title: '4 NEW JERSEY SEEKS TO END DRY LAW TOMORROW',
+                            summary: 'Should the Prohibition Amendment Be Declared Unconstitutional?',
+                            copy: 'Lorem ipsum dolor sit amet, ne nam admodum apeirian, cu clita torquatos mel,' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.'  +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ',
+                            author: 'Massimo Penzo'
+                        }),
+                        new ArticleModel({
+                            title: '5 NEW JERSEY SEEKS TO END DRY LAW TOMORROW',
+                            summary: 'Should the Prohibition Amendment Be Declared Unconstitutional?',
+                            copy: 'Lorem ipsum dolor sit amet, ne nam admodum apeirian, cu clita torquatos mel,' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.'  +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ',
+                            author: 'Massimo Penzo'
+                        }),
+                        new ArticleModel({
+                            title: '6 NEW JERSEY SEEKS TO END DRY LAW TOMORROW',
+                            summary: 'Should the Prohibition Amendment Be Declared Unconstitutional?',
+                            copy: 'Lorem ipsum dolor sit amet, ne nam admodum apeirian, cu clita torquatos mel,' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.'  +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ',
+                            author: 'Massimo Penzo'
+                        }),
+                        new ArticleModel({
+                            title: '7 NEW JERSEY SEEKS TO END DRY LAW TOMORROW',
+                            summary: 'Should the Prohibition Amendment Be Declared Unconstitutional?',
+                            copy: 'Lorem ipsum dolor sit amet, ne nam admodum apeirian, cu clita torquatos mel,' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.'  +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ' +
+                            'Vel quis fabellas delicata ex. Ne elit rebum nusquam eum. Et harum mucius electram vix, dicant tritani facilisis est et.' +
+                            ' veri novum equidem et eum. Exerci delenit qui ut. Sit tation atomorum an. Sed ut nihil' +
+                            ' clita constituam, ei utinam assentior rationibus vis, ad per cetero labitur.' +
+                            'Eos no labitur legimus. Iisque principes argumentum est an, id zril fabulas qui. ',
+                            author: 'Massimo Penzo'
+                        })
+                    ]
+            );
+
+            var container = new ArticleContainerView({
+                el: '#content',
+                collection: articles
+            });
+
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+    /*instantiating a new router object*/
+    var app_router = new NewspaperRouter();
+    Backbone.history.start();
+
+</script>
+</body>
+</html>
